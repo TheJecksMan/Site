@@ -1,6 +1,6 @@
 .side_bar{
-    position: absolute;
-    bottom: 15px;
+    position: fixed;
+    bottom: 55px;
     right: 15px;
 }
 
