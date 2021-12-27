@@ -31,16 +31,20 @@ body {
     color: white;
     text-align: center;
 }
-
 .intro__text__color{
     color: #e31b6d;
 }
 
 .intro__arrow{
-    transform: rotate(-90deg);
-    width: 20px;
-    height: 20px;
-    align-items: top;
+    filter: invert(100%);
+    width: 12px;
+    height: 12px;
+    vertical-align: middle;
+    margin-bottom: 2px;
+    margin-left: 5px;
+    
+    transform: rotate(0deg);
+    transition: transform .2s linear;
 }
 
 /*Button */
@@ -60,6 +64,11 @@ body {
 .intro__button:hover{
     color: #e31b6d;
     transition: color .2s linear;
+}
+
+.intro__button:hover .intro__arrow{
+    transform: rotate(90deg);
+    transition: transform .2s linear;
 }
 
 /*Font*/
