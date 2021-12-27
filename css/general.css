@@ -36,6 +36,14 @@ body {
     color: #e31b6d;
 }
 
+.intro__arrow{
+    transform: rotate(-90deg);
+    width: 20px;
+    height: 20px;
+    align-items: top;
+}
+
+/*Button */
 .intro__button{
     display: inline-block;
     vertical-align: top;
@@ -46,7 +54,7 @@ body {
     color: white;
     text-decoration: none;
     font-family: Raleway-Bold;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .intro__button:hover{
@@ -57,5 +65,5 @@ body {
 /*Font*/
 @font-face {
     font-family: Raleway-Bold;
-    src: url(/fonts/Raleway-Bold.ttf);
+    src: url("./fonts/Raleway-Bold.ttf");
 }
