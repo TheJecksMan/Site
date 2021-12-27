@@ -15,6 +15,13 @@
     padding-left: 10px;
 }
 
+.terminal-header .name-terminal{
+    position: absolute;
+    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+    font-size: 11pt;
+    margin-top: 6px;
+}
+
 .terminal-header .button {
     width: 12px;
     height: 12px;
@@ -46,15 +53,31 @@
     top: 30px;
     bottom: 0;
     overflow: auto;
+    line-height: 30px;
 }
 
-.type-cursor{
-    opacity: 1;
-    animation: blink .7s infinite;
+.green-text{
+    color: #3BB662;
 }
 
-@keyframes blink{
-    0% { opacity:1; }
-    50% { opacity:0; }
-    100% { opacity:1; }
+.typed-cursor::after{
+    content: "_";
+	opacity: 0;
+    -webkit-animation: blink 2s linear infinite;
+	animation: blink 2s linear infinite;
+}
+
+@keyframes blink {
+	0% {opacity: 0;}
+	40% {opacity: 0;}
+	50% {opacity: 1;}
+	90% {opacity: 1;}
+	100% {opacity: 0;}
+}
+@-webkit-keyframes blink{
+    0% {opacity: 0;}
+    40% {opacity: 0;}
+    50% {opacity: 1;}
+    90% {opacity: 1;}
+    100% {opacity: 0;}
 }
