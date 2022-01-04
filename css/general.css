@@ -49,26 +49,19 @@ body {
     transition: transform .2s linear;
 }
 
-/* Desk */
+/* Nav */
 nav{
-    top: 0;
-    left: 0;
     position: fixed;
     background: #1b242f;
-    /* border-bottom: 3px solid #04c2c9; */
     height: 50px;
-    text-align: left;
     width: 100%;
+    top: 0;
+    left: 0;
     z-index: 1000;
-    cursor: pointer;
-}
-
-.warp{
-    text-decoration: none;
 }
 
 .warp__menu{
-    display:inline-flex;  
+    display:inline-flex;
 }
 
 .page-link{
@@ -79,8 +72,8 @@ nav{
     text-decoration: none;
     font-size: 16px;
     text-transform: uppercase;
+    cursor: pointer;
 }
-
 
 .active, .page-link:hover{
     color: #e31b6d;
@@ -138,6 +131,62 @@ nav{
     font-size: 42px;
     color: black;
     text-align: center;
+}
+
+/* Contact me */
+
+.contact{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    background: #252934;
+
+    width: 100%;
+    height: 15vh;
+
+    margin: 0 auto;
+    -webkit-background-size: cover;
+    background-size: cover;
+    text-align: center;
+}
+
+.container_contact{
+    width: 20%;
+    max-width: 1200px;
+}
+
+.social_icon{
+    width: 10%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact_text{
+    font-family: Raleway-Bold;
+    font-size: 30px;
+    color: white;
+}
+
+.lic_text{
+    font-family: Raleway-Bold;
+    font-size: 15px;
+    color: white;
+}
+
+.icon{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.invert{
+    filter: invert(80%);
+}
+
+a{
+    text-decoration: none;
 }
 
 /*Font*/

@@ -1,17 +1,30 @@
-.side_bar{
+.side_bar-button {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    
     position: fixed;
-    bottom: 55px;
-    right: 15px;
+    bottom: 35px;
+    right: 0px;
+    background: #39464e;
+    color: #FFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px 0 0 8px;
+    cursor: pointer;
+    z-index: 2;
 }
 
-.github_icon{
+.side_bar-arrow{
     filter: invert(100%);
-    width: 38px;
-    height: 38px;
+    width: 12px;
+    height: 12px;
+    transform: rotate(180deg);
+    transition: transform .2s linear;
 }
 
-.github_icon:hover{
-    width: 38px;
-    height: 38px;
-    transform: inver(0%) .2 linear;
-}
+.side_bar-arrow{
+    transform: rotate(0deg);
+    transition: transform .2s linear;
+} 
+

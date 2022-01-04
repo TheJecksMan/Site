@@ -17,7 +17,7 @@
 
 .terminal-header .name-terminal{
     position: absolute;
-    font-family: Menlo, Monaco, "Consolas", "Courier New", "Courier";
+    font-family: Raleway-Bold;
     font-size: 11pt;
     margin-top: 6px;
 }
@@ -74,10 +74,17 @@
 	90% {opacity: 1;}
 	100% {opacity: 0;}
 }
+
 @-webkit-keyframes blink{
     0% {opacity: 0;}
     40% {opacity: 0;}
     50% {opacity: 1;}
     90% {opacity: 1;}
     100% {opacity: 0;}
+}
+
+/*Font*/
+@font-face {
+    font-family: Raleway-Bold;
+    src: url("../fonts/Raleway-Bold.ttf");
 }
